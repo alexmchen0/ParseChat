@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F7DDAC4437C8A3AC8D29ACDF /* Pods_ParseChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9577F4571C3A0E25168E6300 /* Pods_ParseChat.framework */; };
 		FA31474D1E5E463900701F35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31474C1E5E463900701F35 /* AppDelegate.swift */; };
 		FA31474F1E5E463900701F35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31474E1E5E463900701F35 /* ViewController.swift */; };
 		FA3147521E5E463900701F35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA3147501E5E463900701F35 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		333B664FA63FC7B9623DB5DD /* Pods-ParseChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-ParseChat/Pods-ParseChat.release.xcconfig"; sourceTree = "<group>"; };
+		85810758667B9D55019DA0A6 /* Pods-ParseChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ParseChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ParseChat/Pods-ParseChat.debug.xcconfig"; sourceTree = "<group>"; };
+		9577F4571C3A0E25168E6300 /* Pods_ParseChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ParseChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA3147491E5E463900701F35 /* ParseChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParseChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA31474C1E5E463900701F35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA31474E1E5E463900701F35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7DDAC4437C8A3AC8D29ACDF /* Pods_ParseChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F50352E99B285746772BE58 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85810758667B9D55019DA0A6 /* Pods-ParseChat.debug.xcconfig */,
+				333B664FA63FC7B9623DB5DD /* Pods-ParseChat.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E3D2D7F61961E66014877123 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9577F4571C3A0E25168E6300 /* Pods_ParseChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FA3147401E5E463900701F35 = {
 			isa = PBXGroup;
 			children = (
 				FA31474B1E5E463900701F35 /* ParseChat */,
 				FA31474A1E5E463900701F35 /* Products */,
+				5F50352E99B285746772BE58 /* Pods */,
+				E3D2D7F61961E66014877123 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA31475B1E5E463900701F35 /* Build configuration list for PBXNativeTarget "ParseChat" */;
 			buildPhases = (
+				7E237A92A5F9B174DFA015C9 /* [CP] Check Pods Manifest.lock */,
 				FA3147451E5E463900701F35 /* Sources */,
 				FA3147461E5E463900701F35 /* Frameworks */,
 				FA3147471E5E463900701F35 /* Resources */,
+				0AFC11DF84BCFE32687E4C90 /* [CP] Embed Pods Frameworks */,
+				5E7E6F3B4EEA5D67EA587B84 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AFC11DF84BCFE32687E4C90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParseChat/Pods-ParseChat-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5E7E6F3B4EEA5D67EA587B84 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ParseChat/Pods-ParseChat-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E237A92A5F9B174DFA015C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FA3147451E5E463900701F35 /* Sources */ = {
@@ -257,6 +332,7 @@
 		};
 		FA31475C1E5E463900701F35 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85810758667B9D55019DA0A6 /* Pods-ParseChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6J8XEY338X;
@@ -270,6 +346,7 @@
 		};
 		FA31475D1E5E463900701F35 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 333B664FA63FC7B9623DB5DD /* Pods-ParseChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 6J8XEY338X;
